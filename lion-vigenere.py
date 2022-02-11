@@ -5,7 +5,7 @@ import re
 
 def panic(values, keys):
   #  print(len(values.replace(" ", ""))== len(keys))
-    return (len(values.replace(" ", "")) != len(keys)) or (not(not(re.search(r"\W",keys))))
+    return (len(values.replace(" ", "")) != len(keys)) or ((re.search(r"\W",keys)))
 
 def print_it(words, keys, decoded=True):
     val = ""
